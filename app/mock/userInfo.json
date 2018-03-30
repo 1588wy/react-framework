@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "obj": [
+        {
+            "id": 1,
+            "name": "John Smith"
+        },{
+            "id": 2,
+            "name": "swash Smith"
+        }
+    ]
+}
