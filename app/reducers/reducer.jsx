@@ -7,5 +7,5 @@ import { combineReducers } from 'redux';
 //     storage: storage
 // }
 // const reducer = persistCombineReducers(config, { reducers });
-const reducer = combineReducers(userReducer);
+const reducer = combineReducers({userReducer});
 export default reducer;

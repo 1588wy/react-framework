@@ -3,6 +3,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
+import { Button } from 'react-weui';
 import * as  TestAction from '../../action/test'
 import * as userService from '../../services/userService'
 import Header from '../../components/Header'
@@ -41,6 +42,7 @@ class Home extends React.Component {
                 <span onClick={this.getChild.bind(this)}>get child info</span>
                 <div className="home"><i className="iconfont icon-home" />hello,home</div>
                 <Link to='/detail'>to detail</Link>
+                <Button>click it</Button>
             </div>
 
         )

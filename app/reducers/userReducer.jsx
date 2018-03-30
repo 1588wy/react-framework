@@ -15,10 +15,6 @@ const initialState = {
 export default function userReducer(state = initialState, action) {
   console.log(action.type);
   switch (action.type) {
-    // case ActionType.userType.GET_USER_AUTH_LIST:
-    //   return Object.assign({}, state, {
-    //     info: action.info
-    //   });
     case ActionType.GET_USER_AUTH_LIST_REQUEST:
         return {
           ...state,

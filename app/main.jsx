@@ -9,7 +9,7 @@ import RouteMap from './routes/routeMap.jsx';
 
 // const { persistor, appStore } = configureStore();
 
-const {persistor} = configureStore();
+const appStore = configureStore();
 
 ReactDOM.render(
     <Provider store={appStore}>

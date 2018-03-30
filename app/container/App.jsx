@@ -1,8 +1,11 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-// import { persistStore, storage } from 'redux-persist'
 import configureStore from '../stores';
 import '../../static/style/iconfont.css';
+//weui style
+import 'weui';
+
+
 class App extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -10,16 +13,12 @@ class App extends React.Component {
   }
 
   render() {
-  
     return (
-
       <div>
-        <h1>{this.props.children}</h1>
+        {this.props.children}
       </div>
-
     )
 
   }
 }
-
 export default App

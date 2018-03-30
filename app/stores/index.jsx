@@ -21,7 +21,5 @@ export default function configureStore(initialState) {
     );
     globalVar.appStore = appStore;
   }
-  // let persistor = persistStore(appStore)
-  // return { persistor, appStore };
   return appStore;
 }
