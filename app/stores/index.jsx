@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import reducer from '../reducers/reducer';
 import { globalVar } from '../constants/GlobalVariable';
-import { persistStore } from 'redux-persist';
+// import { persistStore } from 'redux-persist';
 import promiseMiddleware from '../axios/promiseMiddleware';
 
 export default function configureStore(initialState) {
@@ -21,6 +21,7 @@ export default function configureStore(initialState) {
     );
     globalVar.appStore = appStore;
   }
-  let persistor = persistStore(appStore)
-  return { persistor, appStore };
+  // let persistor = persistStore(appStore)
+  // return { persistor, appStore };
+  return appStore;
 }

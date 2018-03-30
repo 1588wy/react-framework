@@ -13,7 +13,6 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                {/* <div className={styles.repeatstyle}>footer</div> */}
                 <div>{this.props.info}</div>
             </div>
 

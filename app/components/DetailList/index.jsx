@@ -1,7 +1,6 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { Rate, Icon } from 'antd';
-import { Button } from 'react-qtui';
 
 class DetailList extends React.Component {
     constructor(props, context) {
@@ -17,7 +16,6 @@ class DetailList extends React.Component {
                 <Rate />
                 <Icon type="link" />
                 <Icon type="step-backward" />
-                <Button>main</Button>
             </div>
         )
     }
